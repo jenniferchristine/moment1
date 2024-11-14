@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="utf-8">
+    <title>DT193G - Moment 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js"></script>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/milligram@1.4.1/dist/milligram.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <div class="overlay"></div>
+    <header>
+        <img src="images/logo_jeja.svg" class="logo" alt="logo for creater">
+        <nav>
+            <ul>
+                <li><a class="material-symbols-outlined" href="index.html">home</a></li>
+                <li><a href="bootstrap.html"><i id="boot-icon" class="bi bi-bootstrap"></i></a></li>
+                <li id="position"><a href="milligram.html"><img src="images/millilogo.svg" class="milli-icon"
+                            alt="milligram logo"></a></li>
+                <li><a class="material-symbols-outlined" href="publish.html">public</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="container">
+            <h1>Milligram</h1>
+            <div id="result">
+
+                <div class="text-container">
+                    <p>
+                        <a href="https://milligram.io/" target="_blank">Milligram</a> är ett enkelt ramverk som
+                        fokuserar på grundläggande styling. Det är skapat för att vara lätt att använda för att bygga
+                        responsiva webbplatser.
+                        Detta ramverk är på grund av sitt minimalistiska tänk ett väldigt lätt sådant som därav snabbt
+                        laddar mindre webbplatser.
+                        <br><br>
+                        Jag tyckte att deras webbplats var lite knepig i sitt enkla sätt. Det kändes jättebra om man
+                        vill skapa något väldigt snabbt och enkelt men jag hade problem
+                        när jag tillexempel ville ändra/kolla något specifikt.
+                        <br><br>
+                        Jag förstod dock inte hur dessa ramverk först skulle fungera och började därav med att göra en
+                        egen layout för helheten med vanlig css. Detta blev lite krångligt
+                        när jag sedan inkluderade ramverken då de har olika default-lägen och förändrade det jag redan
+                        hade gjort, så jag tror nog att jag fått mer känsla av detta
+                        ramverk om jag endast arbetat med det.
+                    </p>
+                </div>
+
+                <div id="milligram-container">
+                    <form id="formResult">
+                        <fieldset>
+                            <div class="column">
+                                <label for="surname">Förnamn</label>
+                                <input type="text" id="surname" required>
+                            </div>
+                            <div class="column">
+                                <label for="lastname">Efternamn</label>
+                                <input type="text" id="lastname" required>
+                            </div>
+                            <div class="column">
+                                <label for="age">Ålder</label>
+                                <input type="number" id="age" required>
+                            </div>
+                            <div class="column">
+                                <label for="city">Stad</label>
+                                <input type="text" id="city" required>
+                            </div>
+                            <div class="float-right">
+                                <input type="checkbox" id="confirmField">
+                                <label class="label-inline" for="confirmField">Godkännande att addera uppgifter</label>
+                            </div>
+                            <div class="column">
+                                <button type="button" class="button" onclick="addToForm(event)">Signera</button>
+                            </div>
+                        </fieldset>
+                    </form>
+
+                    <br><br><br>
+
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Förnamn</th>
+                                <th scope="col">Efternamn</th>
+                                <th scope="col">Ålder</th>
+                                <th scope="col">Stad</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>1</td>
+                                <td>Jennifer</td>
+                                <td>Jakobsson</td>
+                                <td>28</td>
+                                <td>Sundsvall</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Liam</td>
+                                <td>Thomasson</td>
+                                <td>11</td>
+                                <td>Söråker</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Pelle</td>
+                                <td>Jakobsson</td>
+                                <td>56</td>
+                                <td>Älvdalen</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Casper</td>
+                                <td>Jakobsson</td>
+                                <td>23</td>
+                                <td>Gagnef</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Olliver</td>
+                                <td>Thomasson</td>
+                                <td>25</td>
+                                <td>Sundsvall</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            <img src="images/logo_jeja.svg" alt="logo for creater">
+            <p>Copyright Jennifer Jakobsson, 2024<br>
+                dt193g Fullstack-utveckling med ramverk</p>
+        </div>
+    </footer>
+    </div>
+</body>
+
+</html>
