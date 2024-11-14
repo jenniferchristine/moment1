@@ -1,5 +1,10 @@
 "use strict";
 
+document.addEventListener("DOMContentLoaded", () => {
+    const form = document.getElementById("formResult");
+    form.addEventListener("submit", addToForm);
+});
+
 function addToForm(event) {
     event.preventDefault();
 
