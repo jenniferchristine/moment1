@@ -41,6 +41,7 @@ header {
     margin-top: 0!important;
 }
 
+#navHome { cursor: pointer; }
 .logo { padding: 3em 0; height: auto; }
 img { width: 100px!important; }
 

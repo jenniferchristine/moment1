@@ -3,6 +3,13 @@
 document.addEventListener("DOMContentLoaded", () => {
     const form = document.getElementById("formResult");
     form.addEventListener("submit", addToForm);
+
+    const homeBtn = document.getElementById("navHome");
+
+    homeBtn.addEventListener("click", () => {
+        window.location.href = "/";
+    });
+
 });
 
 function addToForm(event) {
